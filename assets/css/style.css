@@ -137,3 +137,21 @@ main {
 .series-block:hover p {
   opacity: 0.75;
 }
+
+/* ===== Piece Details (Maße & Infos) ===== */
+
+.piece-details {
+  margin-top: 40px;
+  max-width: 640px;
+  font-size: 15px;
+  color: #444;
+}
+
+.piece-details p {
+  margin-bottom: 8px;
+}
+
+.piece-details strong {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}

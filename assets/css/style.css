@@ -197,26 +197,12 @@ main {
   font-size: 16px;
   color: #444;
 }
-/* ===== CLICK FIX FOR WORK SERIES ===== */
+/* ===== FIX: Platz für fixe Navigation ===== */
 
-.work-series {
-  position: relative;
-  z-index: 2;
+body {
+  padding-top: 96px; /* exakt Höhe der Navigation */
 }
 
-.series-block {
-  position: relative;
-}
-
-.series-link {
-  display: block;
-  position: relative;
-  z-index: 3;
-  pointer-events: auto;
-}
-
-/* Sicherstellen, dass nav nicht überlappt */
-main {
-  position: relative;
-  z-index: 1;
+nav {
+  height: 96px;
 }

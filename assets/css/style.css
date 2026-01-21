@@ -197,3 +197,26 @@ main {
   font-size: 16px;
   color: #444;
 }
+/* ===== CLICK FIX FOR WORK SERIES ===== */
+
+.work-series {
+  position: relative;
+  z-index: 2;
+}
+
+.series-block {
+  position: relative;
+}
+
+.series-link {
+  display: block;
+  position: relative;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+/* Sicherstellen, dass nav nicht überlappt */
+main {
+  position: relative;
+  z-index: 1;
+}

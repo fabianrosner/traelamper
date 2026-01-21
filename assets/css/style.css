@@ -108,3 +108,32 @@ main {
   display: block;
   margin: 0;
 }
+
+/* ===== WORK – Serien Hover Effekt ===== */
+
+.work-series {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px;
+  margin-top: 120px;
+}
+
+.series-block img {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.series-block h2,
+.series-block p {
+  transition: opacity 0.6s ease;
+}
+
+/* Hover-Zustand */
+.series-block:hover img {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.series-block:hover h2,
+.series-block:hover p {
+  opacity: 0.75;
+}

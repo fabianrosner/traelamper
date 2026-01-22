@@ -255,3 +255,129 @@ a {
     transform: translateY(0);
   }
 }
+/* =========================================================
+   WORK & DETAIL – SAUBERES GALERIE-LAYOUT (FINAL)
+   ========================================================= */
+
+/* ---------- WORK SEITE ---------- */
+
+.work-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 40px 160px;
+}
+
+.work-page h1 {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+.work-page .intro {
+  max-width: 720px;
+  font-size: 19px;
+  margin-bottom: 120px;
+}
+
+/* 2x2 Grid */
+.work-series {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px 80px;
+}
+
+.series-block img {
+  border-radius: 28px;
+  margin-bottom: 28px;
+  transition: opacity 0.4s ease;
+}
+
+.series-block h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.series-block p {
+  font-size: 17px;
+  max-width: 460px;
+  color: #444;
+}
+
+/* Ruhiger Hover */
+.series-block:hover img {
+  opacity: 0.85;
+}
+
+
+/* ---------- DETAILSEITEN (TANNED / CLARITY) ---------- */
+
+.series {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 160px 40px 160px;
+}
+
+.series-intro h1 {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+.series-intro p {
+  font-size: 19px;
+  max-width: 720px;
+  margin-bottom: 120px;
+}
+
+/* 2x2 Galerie pro Leuchte */
+.piece {
+  margin-bottom: 160px;
+}
+
+.piece h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.piece > p {
+  font-size: 17px;
+  max-width: 640px;
+  margin-bottom: 40px;
+}
+
+.piece-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.piece-gallery img {
+  border-radius: 24px;
+}
+
+/* Details unter Bildern */
+.piece-details {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+  max-width: 520px;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .work-series,
+  .piece-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .work-page,
+  .series {
+    padding: 120px 24px 120px;
+  }
+
+  .work-page h1,
+  .series-intro h1 {
+    font-size: 42px;
+  }
+}

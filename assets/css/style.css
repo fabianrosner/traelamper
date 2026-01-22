@@ -223,9 +223,12 @@ nav a {
 }
 
 .nav-logo {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
   object-fit: contain;
+  display: block;
+}
 }
 
 /* =========================================================

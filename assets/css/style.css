@@ -1,7 +1,16 @@
+/* =========================================================
+   RESET & BASIS
+   ========================================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 body {
@@ -16,311 +25,10 @@ a {
   text-decoration: none;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #f5f5f3;
-  padding: 28px 40px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 100;
-}
-
-nav a {
-  margin-left: 28px;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-}
-
-.lang-switch {
-  font-size: 12px;
-}
-
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 140px 40px 100px;
-}
-
-h1 {
-  font-size: 54px;
-  font-weight: 400;
-  margin-bottom: 60px;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 400;
-  margin: 50px 0 20px;
-}
-
-p {
-  max-width: 640px;
-  font-size: 18px;
-  margin-bottom: 22px;
-}
-
-img {
-  width: 100%;
-  margin: 60px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 80px;
-}
-
-footer {
-  padding: 80px 40px;
-  font-size: 13px;
-  color: #555;
-}
-/* ===== Layout Fix für Seiten mit fixer Navigation ===== */
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 140px 40px 100px;
-}
-
-/* ===== Serien & Galerie ===== */
-
-.series-intro {
-  margin-bottom: 120px;
-}
-
-.piece {
-  margin-bottom: 160px;
-}
-
-.piece-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
-  margin-top: 60px;
-}
-
-.piece-gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-}
-
-/* ===== WORK – Serien Hover Effekt ===== */
-
-.work-series {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 120px;
-  margin-top: 120px;
-}
-
-.series-block img {
-  transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-.series-block h2,
-.series-block p {
-  transition: opacity 0.6s ease;
-}
-
-/* Hover-Zustand */
-.series-block:hover img {
-  transform: scale(1.03);
-  opacity: 0.9;
-}
-
-.series-block:hover h2,
-.series-block:hover p {
-  opacity: 0.75;
-}
-
-/* ===== Piece Details (Maße & Infos) ===== */
-
-.piece-details {
-  margin-top: 40px;
-  max-width: 640px;
-  font-size: 15px;
-  color: #444;
-}
-
-.piece-details p {
-  margin-bottom: 8px;
-}
-
-.piece-details strong {
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
-/* ===== Details / Maße unter Serien ===== */
-
-.piece-details {
-  margin-top: 28px;
-  padding-top: 12px;
-  border-top: 1px solid #ddd;
-  max-width: 520px;
-}
-
-.piece-details p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 6px;
-  color: #555;
-}
-
-.piece-details strong {
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: #111;
-}
-
-/* ===== WORK Seite Feinschliff ===== */
-
-.work-series .series-block {
-  display: block;
-}
-
-.work-series img {
-  margin: 0 0 24px 0;
-}
-
-.work-series h2 {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.work-series p {
-  font-size: 16px;
-  color: #444;
-}
-/* ===== FIX: Platz für fixe Navigation ===== */
-
-body {
-  padding-top: 96px; /* exakt Höhe der Navigation */
-}
-
-nav {
-  height: 96px;
-}
-/* ===== FINAL FIX: Nav darf Klicks nicht abfangen ===== */
-
-nav {
-  pointer-events: none;
-}
-
-nav a {
-  pointer-events: auto;
-}
-
-
-
-/* Textbereich */
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 220px 40px 0;
-  color: #f5f5f3;
-}
-
-/* Typografie */
-.hero-content h1 {
-  font-size: 72px;
-  font-weight: 400;
-  margin-bottom: 24px;
-  color: #f5f5f3;
-}
-
-.hero-claim {
-  font-size: 22px;
-  margin-bottom: 14px;
-  color: #ededed;
-}
-
-.hero-materials {
-  font-size: 14px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  color: #d8d8d8;
-}
-
-.hero-sub {
-  font-size: 14px;
-  color: #cfcfcf;
-}
-/* Footer auf Hero */
-.site-footer {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  color: #d0d0d0;
-}
 /* =========================================================
-   MOBILE OPTIMIERUNG
+   NAVIGATION
    ========================================================= */
 
-@media (max-width: 768px) {
-
-  nav {
-    padding: 20px 24px;
-  }
-
-  nav a {
-    margin-left: 16px;
-    font-size: 12px;
-  }
-
-
-
-  .home-hero {
-    height: 100svh;
-  }
-
-  .hero-content {
-    padding: 140px 24px 0;
-  }
-
-  .hero-content h1 {
-    font-size: 42px;
-  }
-
-  .hero-claim {
-    font-size: 18px;
-  }
-
-  .hero-materials {
-    font-size: 12px;
-    letter-spacing: 0.14em;
-  }
-
-  .hero-sub {
-    font-size: 12px;
-  }
-
-  .site-footer {
-    left: 24px;
-    bottom: 24px;
-  }
-}
-/* ===============================
-   RESET SICHERHEIT
-================================ */
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/* ===============================
-   NAVIGATION
-================================ */
 .site-nav {
   position: fixed;
   top: 0;
@@ -344,17 +52,16 @@ img {
   margin-left: 28px;
   font-size: 13px;
   letter-spacing: 0.12em;
-  text-decoration: none;
-  color: #111;
 }
 
-/* ===============================
-   HERO (DESKTOP)
-================================ */
+/* =========================================================
+   HERO – DESKTOP
+   ========================================================= */
+
 .hero {
   position: relative;
   height: 100vh;
-  margin-top: 88px; /* Platz für Nav */
+  margin-top: 88px; /* Platz für Navigation */
   overflow: hidden;
 }
 
@@ -366,50 +73,57 @@ img {
   object-fit: cover;
 }
 
+/* Verlauf für Lesbarkeit */
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0)
+    rgba(0,0,0,0.55) 0%,
+    rgba(0,0,0,0.25) 45%,
+    rgba(0,0,0,0.0) 75%
   );
 }
 
+/* Text */
 .hero-text {
   position: relative;
   z-index: 2;
   max-width: 1100px;
+  margin: 0 auto;
   padding: 200px 40px 0;
   color: #f5f5f3;
 }
 
 .hero-text h1 {
   font-size: 72px;
+  font-weight: 400;
   margin-bottom: 24px;
 }
 
 .claim {
   font-size: 22px;
+  margin-bottom: 14px;
 }
 
 .materials {
   font-size: 14px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin: 18px 0;
+  margin-bottom: 24px;
+  color: #d8d8d8;
 }
 
 .sub {
   font-size: 14px;
-  opacity: 0.85;
+  color: #cfcfcf;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* =========================================================
+   FOOTER (auf Hero)
+   ========================================================= */
+
 .site-footer {
   position: absolute;
   bottom: 32px;
@@ -419,9 +133,10 @@ img {
   color: #ddd;
 }
 
-/* ===============================
+/* =========================================================
    MOBILE
-================================ */
+   ========================================================= */
+
 @media (max-width: 768px) {
 
   .site-nav {

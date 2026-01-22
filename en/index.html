@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Trae Lamper</title>
-  <meta name="description" content="Handcrafted lighting objects between function and sculpture.">
+  <meta name="description" content="Sculptural lighting objects between studio craft and collectible design.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -11,25 +11,43 @@
 <body>
 
 <nav class="main-nav">
-  <a href="/en/">Home</a>
-  <a href="/en/work.html">Work</a>
-  <a href="/en/studio.html">Studio</a>
-  <a href="/en/process.html">Process</a>
-  <a href="/en/contact.html">Contact</a>
-  <a href="/de/">DE</a>
+  <div class="nav-left">
+    <img src="/assets/img/logo.png" alt="Trae Lamper Logo" class="nav-logo">
+  </div>
+  <div class="nav-right">
+    <a href="/en/">Home</a>
+    <a href="/en/work.html">Work</a>
+    <a href="/en/studio.html">Studio</a>
+    <a href="/en/process.html">Process</a>
+    <a href="/en/contact.html">Contact</a>
+    <a href="/de/">DE</a>
+  </div>
 </nav>
 
 <main class="home">
 
-  <header class="home-intro">
-    <h1>Trae Lamper</h1>
-    <p>
-      Handcrafted lighting objects positioned between function and sculpture.
-      Each piece is defined by material, time and presence.
-    </p>
-  </header>
+  <section class="home-hero">
+    <div class="hero-bg">
+      <img src="/assets/img/home/hero.jpg" alt="Trae Lamper lighting object">
+    </div>
+
+    <div class="hero-content fade-in">
+      <h1>TRÆ LAMPER</h1>
+      <p class="hero-claim">Lighting Objects</p>
+      <p class="hero-materials">Wood · Stone · Beton · Metal</p>
+      <p class="hero-sub">Studio Craft / Collectible Design</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Trae Lamper
+  </footer>
 
 </main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

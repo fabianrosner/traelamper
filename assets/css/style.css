@@ -184,3 +184,51 @@ a {
     bottom: 24px;
   }
 }
+/* =========================================================
+   WORK PAGE
+   ========================================================= */
+
+.work-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 160px 40px 140px;
+}
+
+.work-page h1 {
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.work-page .intro {
+  max-width: 680px;
+  font-size: 18px;
+  margin-bottom: 120px;
+}
+
+/* Serienübersicht */
+.work-series {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px 100px;
+}
+
+.series-block {
+  display: block;
+}
+
+.series-block img {
+  border-radius: 32px;
+  margin-bottom: 28px;
+}
+
+.series-block h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.series-block p {
+  font-size: 16px;
+  color: #444;
+  max-width: 420px;
+}

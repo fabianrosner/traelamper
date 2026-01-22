@@ -206,3 +206,12 @@ body {
 nav {
   height: 96px;
 }
+/* ===== FINAL FIX: Nav darf Klicks nicht abfangen ===== */
+
+nav {
+  pointer-events: none;
+}
+
+nav a {
+  pointer-events: auto;
+}

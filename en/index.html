@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
   <title>Trae Lamper</title>
-  <meta name="description" content="Sculptural lighting objects between studio craft and collectible design.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lighting Objects – Studio Craft / Collectible Design">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
 
-<nav class="main-nav">
-  <div class="nav-left">
-    <img src="/assets/img/logo.png" alt="Trae Lamper Logo" class="nav-logo">
-  </div>
-  <div class="nav-right">
-    <a href="/en/">Home</a>
-    <a href="/en/work.html">Work</a>
-    <a href="/en/studio.html">Studio</a>
-    <a href="/en/process.html">Process</a>
-    <a href="/en/contact.html">Contact</a>
-    <a href="/de/">DE</a>
+<nav class="site-nav">
+  <a href="/de/" class="logo">
+    <img src="/assets/img/logo.png" alt="Trae Lamper Logo">
+  </a>
+
+  <div class="nav-links">
+    <a href="/de/work.html">Work</a>
+    <a href="/de/studio.html">Studio</a>
+    <a href="/de/process.html">Process</a>
+    <a href="/de/contact.html">Contact</a>
+    <a href="/en/">EN</a>
   </div>
 </nav>
 
-<main class="home">
+<header class="hero">
+  <img src="/assets/img/home/hero.jpg" alt="Trae Lamper Lighting Object" class="hero-image">
 
-  <section class="home-hero">
-    <div class="hero-bg">
-      <img src="/assets/img/home/hero.jpg" alt="Trae Lamper lighting object">
-    </div>
+  <div class="hero-text">
+    <h1>TRÆ LAMPER</h1>
+    <p class="claim">Lighting Objects</p>
+    <p class="materials">Wood · Stone · Beton · Metal</p>
+    <p class="sub">Studio Craft / Collectible Design</p>
+  </div>
+</header>
 
-    <div class="hero-content fade-in">
-      <h1>TRÆ LAMPER</h1>
-      <p class="hero-claim">Lighting Objects</p>
-      <p class="hero-materials">Wood · Stone · Beton · Metal</p>
-      <p class="hero-sub">Studio Craft / Collectible Design</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    © <span id="year"></span> Trae Lamper
-  </footer>
-
-</main>
+<footer class="site-footer">
+  © <span id="year"></span> Trae Lamper
+</footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();

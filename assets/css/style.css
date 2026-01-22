@@ -333,3 +333,53 @@ nav a {
   letter-spacing: 0.08em;
   color: #d0d0d0;
 }
+/* =========================================================
+   MOBILE OPTIMIERUNG
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 20px 24px;
+  }
+
+  nav a {
+    margin-left: 16px;
+    font-size: 12px;
+  }
+
+  .nav-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .home-hero {
+    height: 100svh;
+  }
+
+  .hero-content {
+    padding: 140px 24px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-claim {
+    font-size: 18px;
+  }
+
+  .hero-materials {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-sub {
+    font-size: 12px;
+  }
+
+  .site-footer {
+    left: 24px;
+    bottom: 24px;
+  }
+}

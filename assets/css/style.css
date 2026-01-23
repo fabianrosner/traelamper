@@ -478,3 +478,20 @@ body {
     line-height: 1.6;
   }
 }
+/* =========================================================
+   LOGO – FINAL FIX
+   ========================================================= */
+
+.site-nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .logo img {
+  display: block;
+  width: auto;
+  height: 42px;
+  max-height: 42px;
+  opacity: 1;
+  visibility: visible;
+}

@@ -382,73 +382,83 @@ a {
   }
 }
 /* =========================================================
-   GLOBAL FIX – NAV OFFSET (DESKTOP + MOBILE)
+   RESET FÜR CONTENT-SEITEN (STUDIO / PROCESS / CONTACT)
    ========================================================= */
 
+/* Fixe Navigation korrekt ausgleichen */
 body {
-  padding-top: 88px; /* Platz für fixe Navigation */
+  padding-top: 96px;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding-top: 72px;
-  }
-}
-
-/* =========================================================
-   CONTENT PAGES (STUDIO / PROCESS / CONTACT)
-   ========================================================= */
+/* ===============================
+   CONTENT-SEITEN – DESKTOP
+================================ */
 
 .content-page {
-  max-width: 1100px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 120px 40px 140px;
+  padding: 120px 32px 160px;
 }
 
-/* Headline */
+/* Hauptüberschrift */
 .content-page h1 {
-  font-size: 56px;
+  font-size: 52px;
+  line-height: 1.15;
   font-weight: 400;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 /* Intro */
 .content-page .intro {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.6;
-  max-width: 720px;
-  margin-bottom: 72px;
+  margin-bottom: 80px;
 }
 
-/* Section Headings */
+/* Abschnittsüberschriften */
 .content-page h2 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-top: 96px;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 120px;
   margin-bottom: 20px;
+  color: #222;
 }
 
-/* Body Text */
+/* Fließtext */
 .content-page p {
   font-size: 17px;
   line-height: 1.65;
-  max-width: 720px;
   margin-bottom: 22px;
 }
 
-/* =========================================================
-   MOBILE – CONTENT PAGES
-   ========================================================= */
+/* Dezente Trennlinie vor Abschnitten */
+.content-page h2::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: #bbb;
+  margin-bottom: 24px;
+}
+
+/* ===============================
+   CONTENT-SEITEN – MOBILE
+================================ */
 
 @media (max-width: 768px) {
 
+  body {
+    padding-top: 80px;
+  }
+
   .content-page {
-    padding: 96px 24px 120px;
+    padding: 96px 22px 120px;
   }
 
   .content-page h1 {
-    font-size: 38px;
-    margin-bottom: 32px;
+    font-size: 36px;
+    margin-bottom: 36px;
   }
 
   .content-page .intro {
@@ -457,13 +467,14 @@ body {
   }
 
   .content-page h2 {
-    font-size: 20px;
-    margin-top: 64px;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    margin-top: 72px;
     margin-bottom: 16px;
   }
 
   .content-page p {
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.6;
   }
 }

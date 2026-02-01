@@ -691,3 +691,50 @@ body {
     gap: 72px;
   }
 }
+/* ===============================
+   SERIES GALLERY – FINAL GRID
+================================ */
+
+.series-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px;
+  margin-top: 120px;
+}
+
+.series-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* ===============================
+   SERIES INTRO SPACING
+================================ */
+
+.series-intro {
+  max-width: 640px;
+  margin-bottom: 120px;
+}
+
+.series-intro p {
+  margin-bottom: 22px;
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+
+@media (max-width: 768px) {
+
+  .series-gallery {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 72px;
+  }
+
+  .series-intro {
+    margin-bottom: 72px;
+  }
+}
